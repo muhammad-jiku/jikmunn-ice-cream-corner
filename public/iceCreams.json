@@ -1,0 +1,74 @@
+[
+  {
+    "id": 101,
+    "name": "Apple Ice Cream",
+    "price": 250,
+    "img": "https://sharedappetite.com/wp-content/uploads/2013/10/IMG_5867-141.jpg"
+  },
+  {
+    "id": 102,
+    "name": "Bacon King Ice Cream",
+    "price": 525,
+    "img": "https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/entry/2012-06-28/Bacon%20cumulus.jpg"
+  },
+  {
+    "id": 103,
+    "name": "Homemade Banana Ice Cream",
+    "price": 200,
+    "img": "https://healthyfitnessmeals.com/wp-content/uploads/2018/04/tropical-banana-ice-cream-4.jpg"
+  },
+  {
+    "id": 104,
+    "name": "Blue Moon Cone",
+    "price": 250,
+    "img": "https://npr.brightspotcdn.com/dims4/default/b2b8722/2147483647/strip/true/crop/1125x1688+0+0/resize/880x1320!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwuwm%2Ffiles%2F201803%2FFotolia_104011872_Subscription_Monthly_M.jpg"
+  },
+  {
+    "id": 105,
+    "name": "Old-fashioned Butter Brickle",
+    "price": 420,
+    "img": "https://creative-culinary.com/wp-content/uploads/butter-brickle-ice-cream-1.jpg"
+  },
+  {
+    "id": 106,
+    "name": "Salt Butterscotch",
+    "price": 500,
+    "img": "https://i.dailymail.co.uk/i/pix/2010/09/17/article-0-0B0338BF000005DC-979_468x386.jpg"
+  },
+  {
+    "id": 107,
+    "name": "Cherry Ice Cream",
+    "price": 375,
+    "img": "https://i.pinimg.com/originals/e2/a9/3e/e2a93e3409bbb4171bdd11dbef8788cb.jpg"
+  },
+  {
+    "id": 108,
+    "name": "Ube Cheese Ice Cream",
+    "price": 299,
+    "img": "https://createwithcream.ph/sites/site.prod1.createwithcream.ph/files/recipes/2020-12/Copy%20of%20NAPC2_D_0122_1900px.jpg"
+  },
+  {
+    "id": 109,
+    "name": "Homemade Chocolate Ice Cream",
+    "price": 459,
+    "img": "https://i.pinimg.com/originals/c6/af/39/c6af39c9c02c195517dbd62ed4a190d9.jpg"
+  },
+  {
+    "id": 110,
+    "name": "Homemade French Vanilla",
+    "price": 480,
+    "img": "https://resto.fivetofivehotel.com/wp-content/uploads/2021/03/1371606862953.jpeg"
+  },
+  {
+    "id": 111,
+    "name": "Mango Ice Cream",
+    "price": 455,
+    "img": "https://recipe52.com/wp-content/uploads/2020/07/Mango-icecream-recipe-12.jpg"
+  },
+  {
+    "id": 112,
+    "name": "Strawberry Ice Cream",
+    "price": 480,
+    "img": "https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cmetadata=none%2Conerror=redirect%2Cq=85%2Cwidth=968/wp-content/uploads/strawberry-ice-cream-day-1.jpg"
+  }
+]
