@@ -1,40 +1,8 @@
 import React from 'react';
 
-const IceCreamCart = ({
-  iceCreamCart,
-  selectOneFromIceCreamCart,
-  removeFromIcerCreamCart,
-}) => {
-  // console.log(props);
-  // const { iceCreamCart, selectOneFromIceCreamCart, removeFromIcerCreamCart } =
-  //   props;
-  // const [] = iceCreamCart
-  // let name = '';
-  // let img = '';
-  // let id;
-  // for (let item of iceCreamCart) {
-  //   name += item?.name;
-  //   img += item?.img;
-  //   id = item?.id;
-  // }
-
-  /* const listItems = iceCreamCart.map((myList) => {
-    return (
-      <li key={myList?.id} style={{ listStyleType: 'none' }}>
-        <img
-          src={myList?.img}
-          alt={myList?.name}
-          style={{
-            height: '50px',
-            width: '50px',
-            border: '1px solide black',
-            borderRadius: '50%',
-          }}
-        />
-        {myList?.name}
-      </li>
-    );
-  }); */
+const IceCreamCart = (props) => {
+  const { iceCreamCart, selectOneFromIceCreamCart, removeFromIcerCreamCart } =
+    props;
 
   return (
     <div
