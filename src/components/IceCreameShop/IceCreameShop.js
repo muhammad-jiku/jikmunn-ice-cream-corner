@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import IceCream from '../IceCream/IceCream';
 
 const IceCreameShop = () => {
   const [iceCreams, setIceCreams] = useState([]);
@@ -6,7 +7,7 @@ const IceCreameShop = () => {
   useEffect(() => {
     fetch('iceCreams.json')
       .then((res) => res.json())
-      .then((data) => console.log(data))
+      .then((data) => setIceCreams(data))
       .catch((err) => console.log(err));
   }, []);
 
@@ -15,7 +16,10 @@ const IceCreameShop = () => {
       <h1>Lovable Ice Cream Shop</h1>
       <div className="iceCreamShopContainer">
         <h1>Ice Cream Shop</h1>
-        {iceCreams.map((iceCream) => console.log(iceCream))}
+        {iceCreams.map((iceCream) => (
+          //   console.log(iceCream)
+          <IceCream key={iceCream?.id} iceCream={iceCream} />
+        ))}
       </div>
       <div className="iceCreamCartContainer">
         <h1>Ice Cream Cart</h1>
