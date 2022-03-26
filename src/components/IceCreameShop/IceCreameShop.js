@@ -14,8 +14,10 @@ const IceCreameShop = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  const addToIceCreamCart = (iceCream) => {
-    console.log(iceCream);
+  const addToIceCreamCart = (selectedIceCream) => {
+    console.log(selectedIceCream);
+    const newIceCreamCart = [...iceCreamCart, selectedIceCream];
+    setIceCreamCart(newIceCreamCart);
   };
 
   return (
