@@ -1,21 +1,45 @@
 .iceCreamContainer{
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
 .iceCreamShopContainer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 15px;
   margin: 25px;
+  width: 70%;
 }
 
 .iceCreamCartContainer{ 
-  background-color: #b1a29a;
+  background-color: #F3F5F9;
    height: 100%;
-   display: sticky;
+   position: sticky;
+   top: 0;
    padding: 15px;
-   margin: 0 15px;
+   margin: 10px 5px;
+   width: 22%;
+   border: 1px solid #aabce2;
 }
+
+/* responsivse section  */
     
+@media only screen and (max-width: 600px) {
+  .iceCreamContainer{
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+  .iceCreamShopContainer{
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iceCreamCartContainer{
+    width: 100%;
+    position: relative;
+   }
+}

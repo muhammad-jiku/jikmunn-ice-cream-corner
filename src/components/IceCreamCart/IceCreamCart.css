@@ -1,24 +1,23 @@
+/* imorting google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
 .iceCreamList{
     list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10px 5px;
-    padding: 10px;
-    background-color: bisque;
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: #94C3F5;
     border: 1px solid rgb(151, 96, 28);
     border-radius: 15px;
 }
 
-.iceCreamList > img{
-    height: 50px;
-    width: 50px;
-    border: 2px solid black;
-    margin-right: 10px;
+.iceCreamListHeader{
+    font-family: 'Roboto', sans-serif;
 }
 
 .iceCreamList > p{
     margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
@@ -43,5 +42,22 @@
 }
 
 .clearBtn{
-    background-color: #e9347c;
+    background-color: #d11460;
+}
+
+.selectBtn:hover{
+    background-color: #855ee2;
+}
+
+.clearBtn:hover{
+    background-color: #be5780;
+}
+
+/* responsivse section  */
+@media only screen and (max-width: 600px) {
+    .iceCreamList{
+        position: relative;
+        left: -10%;
+        width: 90%;
+    }
 }

@@ -1,5 +1,8 @@
+/* imorting google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
 .iceCreamCard{
-  border: 1px solid #FFF387;
+  border: 1px solid #aabce2;
   border-radius: 10px;
   padding: 5px 0;
   width: 280px;
@@ -19,15 +22,20 @@
   padding: 0 5px;
 }
 
+.iceCreamInfo > h4{
+  font-family: 'Poppins', sans-serif;
+}
+
 .iceCreamName{
   font-size: 20px;
   font-family: cursive;
   text-transform: capitalize;
 }
 
+
 .addBtn {
   width: 100%;
-  background-color: #FF2C7F;
+  background-color: #6232EF; 
   color: white;
   border: none;
   border-end-start-radius: 8px;
@@ -46,5 +54,5 @@
 }
 
 .addBtn:hover {
-  background-color: #9c1b4f;
+  background-color: #8f6df5 ;
 }

@@ -19,7 +19,7 @@ const IceCreameShop = () => {
     const existsIceCreamCart = iceCreamCart.find(
       (product) => product?.id === selectedIceCream.id
     );
-    console.log(existsIceCreamCart);
+
     if (!existsIceCreamCart) {
       newIceCreamCart = [...iceCreamCart, selectedIceCream];
     } else {
@@ -29,12 +29,11 @@ const IceCreameShop = () => {
       newIceCreamCart = [...restIceCreamCart, existsIceCreamCart];
       alert('Sorry You have already added the item');
     }
-    console.log(newIceCreamCart);
+
     setIceCreamCart(newIceCreamCart);
   };
 
   const selectOneFromIceCreamCart = () => {
-    console.log(iceCreamCart);
     if (iceCreamCart.length !== 0) {
       const randomIceCream =
         iceCreamCart[Math.floor(Math.random() * iceCreamCart.length)];
@@ -49,7 +48,9 @@ const IceCreameShop = () => {
   };
 
   return (
+    // class added
     <div className="iceCreamContainer">
+      {/* class added */}
       <div className="iceCreamShopContainer">
         {iceCreams.map((iceCream) => (
           <IceCream
@@ -59,6 +60,7 @@ const IceCreameShop = () => {
           ></IceCream>
         ))}
       </div>
+      {/* class added */}
       <div className="iceCreamCartContainer">
         <IceCreamCart
           iceCreamCart={iceCreamCart}

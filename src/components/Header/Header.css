@@ -1,11 +1,13 @@
-/*  */
-:root{
-    --primary: #94C3F5;
-}
+/* imorting google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
 .header{
-    background-color: var(--primary);
+    background-color: #94C3F5;
     padding: 10px;
 }
 .header > h1{
     text-align: center;
+    color: brown;
+    font-family: 'Roboto Slab', serif;
+    text-transform: capitalize;
 }

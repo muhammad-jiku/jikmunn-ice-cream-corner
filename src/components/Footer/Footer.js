@@ -3,6 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
+    // class added
     <div className="qsnAnswersection">
       <h3>How useState Works?</h3>
       <p>
