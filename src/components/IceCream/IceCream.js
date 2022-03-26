@@ -10,8 +10,10 @@ const IceCream = (props) => {
   return (
     <div className="iceCreamCard">
       <img src={img} alt={name} />
-      <h3> {name} </h3>
-      <h4>Price: ${price} </h4>
+      <div className="iceCreamInfo">
+        <h3 className="iceCreamName"> {name} </h3>
+        <h4>Price: ${price} </h4>
+      </div>
       <button className="addBtn" onClick={() => addToIceCreamCart(iceCream)}>
         <p className="addBtnTxt">Add to Cart</p>
         <FontAwesomeIcon icon={faShoppingCart} />

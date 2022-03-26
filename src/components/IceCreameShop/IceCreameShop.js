@@ -31,10 +31,6 @@ const IceCreameShop = () => {
     }
     console.log(newIceCreamCart);
     setIceCreamCart(newIceCreamCart);
-
-    /* console.log(selectedIceCream);
-     newIceCreamCart = [...iceCreamCart, selectedIceCream];
-    setIceCreamCart(newIceCreamCart); */
   };
 
   const selectOneFromIceCreamCart = () => {
@@ -56,12 +52,11 @@ const IceCreameShop = () => {
     <div className="iceCreamContainer">
       <div className="iceCreamShopContainer">
         {iceCreams.map((iceCream) => (
-          //   console.log(iceCream)
           <IceCream
             key={iceCream?.id}
             iceCream={iceCream}
             addToIceCreamCart={addToIceCreamCart}
-          />
+          ></IceCream>
         ))}
       </div>
       <div className="iceCreamCartContainer">
@@ -69,7 +64,7 @@ const IceCreameShop = () => {
           iceCreamCart={iceCreamCart}
           selectOneFromIceCreamCart={selectOneFromIceCreamCart}
           removeFromIcerCreamCart={removeFromIcerCreamCart}
-        />
+        ></IceCreamCart>
       </div>
     </div>
   );

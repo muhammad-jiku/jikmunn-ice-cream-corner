@@ -1,12 +1,21 @@
 .iceCreamContainer{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
 
 
 .iceCreamShopContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  grid-gap: 45px;
-  margin: 100px 104px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  margin: 25px;
 }
+
+.iceCreamCartContainer{ 
+  background-color: #b1a29a;
+   height: 100%;
+   display: sticky;
+   padding: 15px;
+   margin: 0 15px;
+}
+    

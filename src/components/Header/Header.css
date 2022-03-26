@@ -1,0 +1,11 @@
+/*  */
+:root{
+    --primary: #94C3F5;
+}
+.header{
+    background-color: var(--primary);
+    padding: 10px;
+}
+.header > h1{
+    text-align: center;
+}

@@ -1,35 +1,35 @@
 import React from 'react';
+import './IceCreamCart.css';
 
 const IceCreamCart = (props) => {
   const { iceCreamCart, selectOneFromIceCreamCart, removeFromIcerCreamCart } =
     props;
 
   return (
-    <div
-      style={{ backgroundColor: 'yellow', height: '100vh', display: 'sticky' }}
-    >
-      <h1>Selected Items:</h1>
+    <div>
+      <h3>Selected Items:</h3>
       <ul>
-        {iceCreamCart.map((myList) => {
+        {iceCreamCart.map((iceCream) => {
           return (
-            <li key={myList?.id} style={{ listStyleType: 'none' }}>
-              <img
-                src={myList?.img}
-                alt={myList?.name}
-                style={{
-                  height: '50px',
-                  width: '50px',
-                  border: '1px solide black',
-                  borderRadius: '50%',
-                }}
-              />
-              {myList?.name}
+            <li key={iceCream?.id} className="iceCreamList">
+              <img src={iceCream?.img} alt={iceCream?.name} />
+              <p>{iceCream?.name}</p>
             </li>
           );
         })}
       </ul>
-      <button onClick={selectOneFromIceCreamCart}>Choose One from Cart</button>
-      <button onClick={removeFromIcerCreamCart}>Clear Cart</button>
+      <div className="btnGrp">
+        <button
+          id="btn"
+          className="selectBtn"
+          onClick={selectOneFromIceCreamCart}
+        >
+          Choose One
+        </button>
+        <button id="btn" className="clearBtn" onClick={removeFromIcerCreamCart}>
+          Clear Cart
+        </button>
+      </div>
     </div>
   );
 };

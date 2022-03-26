@@ -1,8 +1,9 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>
+    <div className="qsnAnswersection">
       <h3>How useState Works?</h3>
       <p>
         useState is React Hook that allows create state variables in functional
@@ -14,7 +15,7 @@ const Footer = () => {
         component, the argument of the useState Hook will be ignored and the
         current value will be retrieved.useState do not return just a variable.
         It returns an array, where the first element is the state variable and
-        the second element is a function to update the value of the variable
+        the second element is a function to update the value of the variable.
       </p>
 
       <h3>Differences between state and props?</h3>
