@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import IceCream from '../IceCream/IceCream';
+import IceCreamCart from '../IceCreamCart/IceCreamCart';
 import './IceCreameShop.css';
 
 const IceCreameShop = () => {
   const [iceCreams, setIceCreams] = useState([]);
+  const [iceCreamCart, setIceCreamCart] = useState([]);
 
   useEffect(() => {
     fetch('iceCreams.json')
@@ -12,16 +14,24 @@ const IceCreameShop = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  const addToIceCreamCart = (iceCream) => {
+    console.log(iceCream);
+  };
+
   return (
     <div className="iceCreamContainer">
       <div className="iceCreamShopContainer">
         {iceCreams.map((iceCream) => (
           //   console.log(iceCream)
-          <IceCream key={iceCream?.id} iceCream={iceCream} />
+          <IceCream
+            key={iceCream?.id}
+            iceCream={iceCream}
+            addToIceCreamCart={addToIceCreamCart}
+          />
         ))}
       </div>
       <div className="iceCreamCartContainer">
-        <h1>Ice Cream Cart</h1>
+        <IceCreamCart iceCreamCart={iceCreamCart} />
       </div>
     </div>
   );
