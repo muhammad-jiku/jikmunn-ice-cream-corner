@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import IceCream from '../IceCream/IceCream';
+import './IceCreameShop.css';
 
 const IceCreameShop = () => {
   const [iceCreams, setIceCreams] = useState([]);
@@ -12,10 +13,8 @@ const IceCreameShop = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Lovable Ice Cream Shop</h1>
+    <div className="iceCreamContainer">
       <div className="iceCreamShopContainer">
-        <h1>Ice Cream Shop</h1>
         {iceCreams.map((iceCream) => (
           //   console.log(iceCream)
           <IceCream key={iceCream?.id} iceCream={iceCream} />
